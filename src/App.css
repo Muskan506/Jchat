@@ -1,0 +1,391 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.dropdownMenu {
+  position: relative;
+  display: inline-block;
+}
+/* //my css */
+.app_body {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: #ededed;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #242b2e;
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+
+  font-size: 15px;
+}
+.dropdown-content a:hover {
+  border-radius: 5px;
+
+  background-color: rgba(55, 65, 81, 1);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  margin-left: 50px;
+  margin-top: -50px;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #c46c00;
+}
+
+.btn-icon:hover {
+  color: #c46c00;
+}
+
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+
+  cursor: pointer;
+}
+select {
+  border: 1px solid #e8eaed;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0 1px 3px -2px #9098a9;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 14px;
+  transition: all 150ms ease;
+}
+option {
+  color: #223254;
+}
+td {
+  font-family: inherit;
+  font-size: 14px;
+  color: #223254;
+}
+
+.center {
+  width: 80%;
+  margin: auto;
+}
+
+.chatbox {
+  min-height: 100vh;
+  width: 95vw;
+  padding: 0;
+}
+.card {
+  height: 90vh;
+}
+.messages {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.playlist {
+  overflow-x: hidden;
+  overflow-y: auto;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.size {
+  height: 50px;
+  width: 100wh;
+}
+.profile-pic {
+  height: 40px;
+  width: 40px;
+}
+.friend-pic {
+  height: 50px;
+  width: 50px;
+}
+.chat-pic {
+  height: 30px;
+  width: 30px;
+}
+.recieve {
+  font-size: 14px;
+  background-color: lightgreen;
+  border-radius: 1rem;
+  padding: 10px 15px;
+  display: inline-block;
+}
+.sent {
+  font-size: 14px;
+  background-color: whitesmoke;
+  border-radius: 1rem;
+  padding: 10px 15px;
+  display: inline-block;
+}
+.time {
+  font-size: 10px;
+  color: #9ca1a3;
+  margin-top: 2%;
+  margin-left: 1%;
+}
+.icon #closeChat,
+#call,
+#info {
+  font-size: 20px;
+  color: #9ca1a3;
+  opacity: 0.5;
+}
+.icon #closeChat:hover,
+#call:hover,
+#info:hover {
+  opacity: 1;
+  color: blue;
+}
+.icon {
+  padding: 15px;
+}
+.name {
+  font-weight: 400;
+  color: #000;
+}
+.under-name {
+  font-size: 12px;
+  line-height: 15px;
+  max-height: 15px;
+}
+
+/*emoji*/
+.input-area {
+  position: relative;
+  display: flex;
+  justify-self: center;
+}
+input[type="text"] {
+  width: 100%;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  border-radius: 5px;
+  height: 2.2rem;
+}
+.emoji-btn {
+  position: absolute;
+  font-size: 1.2rem;
+  background: transparent;
+  right: 60px;
+  top: 2px;
+  opacity: 0.5;
+  border: 0;
+}
+.submit {
+  padding: 0.25rem 0.5rem;
+  margin-left: 0.5rem;
+  background-color: blue;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  opacity: 0.7;
+}
+.emoji-btn:hover,
+.submit:hover {
+  opacity: 1;
+}
+
+/* users */
+.users {
+  min-height: 100vh;
+  width: 96vw;
+  padding: 0;
+}
+
+#myInput {
+  box-sizing: border-box;
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {
+  outline: 3px solid #ddd;
+}
+*:focus {
+  outline: none;
+}
+table {
+  text-align: left;
+  position: relative;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 0.25rem;
+}
+tr.red th {
+  background: #242b2e;
+  color: white;
+}
+th {
+  background: white;
+  position: sticky;
+  top: 0; /* Don't forget this, required for the stickiness */
+  box-shadow: 1 2px 2px 1px rgba(0, 0, 0, 0.4);
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+/* settings */
+.setting {
+  height: 100vh;
+  width: 96wh;
+  padding: 0;
+  overflow-y: auto;
+}
+.setting ul li button {
+  background-color: transparent;
+  text-decoration: none;
+  border: 0ch;
+  height: 20px;
+  text-align: center;
+  margin-bottom: 5px;
+  padding-top: 3px;
+}
+
+.search input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 95%;
+  background: #f1f1f1;
+  border-radius: 0%;
+}
+.search button {
+  float: left;
+  width: 5%;
+  padding: 4px;
+  background: #2196f3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+/* css for toggle */
+.switch {
+  /* position: fixed; */
+  position: absolute;
+  display: inline-block;
+  width: 50px;
+  height: 40px;
+  /* transform: translate(-50%,-50%); */
+  left: 16%;
+  margin: 0 10px;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  bottom: 0ch;
+  left: 0;
+  right: 0;
+  width: 50px;
+  height: 28px;
+  padding: 4px;
+  background-color: #ccc;
+  transition: 0.6s;
+  border-radius: 40px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: 5px;
+  bottom: 1px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 60%;
+}
+input:checked + .slider {
+  background-color: blue;
+}
+input:checked + .slider:before {
+  transform: translate(22px);
+}
+#botpanel {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+/* bot css */
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.box:hover{
+  transform:scale(1.1);
+  box-shadow: 1px 1px 1px #000;
+
+}
+.box{
+  transition: 1s;
+}
+.cookie{
+  font-size: 8rem;
+  color: brown;
+}
+.message-left{
+  float:left;
+  clear: both;
+  background-color: gray;
+  width:20%;
+  padding:10px;
+  margin: 15px 16px;
+  border:2px solid black;
+  border-radius: 10px;
+
+}
+ .message-right{
+  background-color: gray;
+  width:20%;
+  padding:10px;
+  margin: 15px 16px;
+  border:2px solid black;
+  border-radius: 10px;
+
+  float:right;
+  clear: both;
+} 
+.chat_body{
+  overflow-y: scroll;
+}
